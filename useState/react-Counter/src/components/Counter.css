@@ -1,0 +1,21 @@
+.counter-container{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1.5rem;
+    border: 2px solid black;
+    align-items: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#btn{
+    background-color: #4CAF50;
+    padding: 5px;
+    width: 5rem;
+    
+}

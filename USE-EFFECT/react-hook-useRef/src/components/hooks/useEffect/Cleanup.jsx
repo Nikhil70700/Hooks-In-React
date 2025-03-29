@@ -1,0 +1,27 @@
+import {useState,useEffect  } from 'react';
+import "./index.css";
+
+
+export const CleanUp=()=>{
+    const[count,setCount]=useState(0);
+
+    useEffect(()=>{
+       const timer= setInterval(()=>{
+            setCount((prev)=>prev+1);
+        },1000)
+        return()=>clearInterval(timer);
+    },[])
+
+
+    return(
+        <div className="container">
+            <div className="counter">
+                <p>Hello,this is CleanUp Fn</p>
+                <div className="odometer" id='odometer'>
+                    {count}
+                </div>
+                <h3 className='title'>This is <br />Real time Counter</h3>
+            </div>
+        </div>
+    );
+};
