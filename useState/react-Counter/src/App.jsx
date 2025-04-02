@@ -4,7 +4,10 @@
 // import CounterTwo from './components/CounterTwo';
 // import Registration from './components/RegistrationForm/Registration';
 // import UnControlled from './components/unControlled';
-import RegistrationReact from './components/RegistrationForm/RegistrationReact';
+// import RegistrationReact from './components/RegistrationForm/RegistrationReact';
+
+import LoginForm from "./components/LoginForm/LoginForm"
+
 
 
 function App() {
@@ -17,7 +20,8 @@ function App() {
       {/* <UnControlled/> */}
       {/* <Controlled/> */}
       {/* <Registration/> */}
-      <RegistrationReact/>
+      {/* <RegistrationReact/> */}
+      <LoginForm/>
     </div>
   )
 }

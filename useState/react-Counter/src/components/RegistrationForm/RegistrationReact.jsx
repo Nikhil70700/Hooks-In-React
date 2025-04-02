@@ -10,21 +10,15 @@ const RegistrationReact = () => {
         email: '',
         password: '',
         phoneNumber: '',
-
     });
-
-
-    const handleInputChnage = (e) => {
+    const handleInputChange = (e) => {
         const { name, value } = e.target;
-
         setUser((prev) => ({ ...prev, [name]: value }));
-
     };
     const handleFormSubmit = (e) => {
         e.preventDefault();
         console.log(user);
-    }
-
+    };
     return (
         <>
         <section className='summary '
@@ -43,27 +37,27 @@ const RegistrationReact = () => {
                     <label htmlFor="firstName">
                         <p>First Name</p>
                     </label>
-                    <input type="text" name='firstName' placeholder='Enter firstName' required value={user.firstName} onChange={handleInputChnage} />
+                    <input type="text" name='firstName' placeholder='Enter firstName' required value={user.firstName} onChange={handleInputChange} />
                     <label htmlFor="text">
                        <p> Middle Name</p>
                     </label>
-                    <input type="text" name='middleName' placeholder='Enter middleName' required value={user.middleName} onChange={handleInputChnage} />
+                    <input type="text" name='middleName' placeholder='Enter middleName' required value={user.middleName} onChange={handleInputChange} />
                     <label htmlFor="lastName">
                         <p>Last Name</p>
                     </label>
-                    <input type="text" name='lastName' placeholder='Enter lastName' required value={user.lastName} onChange={handleInputChnage} />
+                    <input type="text" name='lastName' placeholder='Enter lastName' required value={user.lastName} onChange={handleInputChange} />
                     <label htmlFor="email">
                         <p>Email</p>
                     </label>
-                    <input type="text" placeholder='Enter Email' name='email' required value={user.email} onChange={handleInputChnage} />
+                    <input type="text" placeholder='Enter Email' name='email' required value={user.email} onChange={handleInputChange} />
                     <label htmlFor="password">
                         <p>Password</p>
                     </label>
-                    <input type="password" placeholder='Enter password' name='password' required value={user.password} onChange={handleInputChnage} />
+                    <input type="password" placeholder='Enter password' name='password' required value={user.password} onChange={handleInputChange} />
                     <label htmlFor="phone">
                         <p>Phone Number</p>
                     </label>
-                    <input type="tel" name='phoneNumber' placeholder='Enter  Phone Number' required value={user.phoneNumber} onChange={handleInputChnage} />
+                    <input type="tel" name='phoneNumber' placeholder='Enter  Phone Number' required value={user.phoneNumber} onChange={handleInputChange} />
                     <p>
                         By create an account you agree to our <a href="#" style={{ color: "dodgerblue" }}>Term & privacy</a>
                     </p>
