@@ -1,9 +1,11 @@
-import './App.css';
-import Controlled from './components/Controlled';
-import Counter from './components/Counter';
-import CounterTwo from './components/CounterTwo';
-import Registration from './components/Registration';
-import UnControlled from './components/unControlled';
+// import './App.css';
+// import Controlled from './components/Controlled';
+// import Counter from './components/Counter';
+// import CounterTwo from './components/CounterTwo';
+// import Registration from './components/RegistrationForm/Registration';
+// import UnControlled from './components/unControlled';
+import RegistrationReact from './components/RegistrationForm/RegistrationReact';
+
 
 function App() {
 
@@ -14,7 +16,8 @@ function App() {
       {/* <CounterTwo/> */}
       {/* <UnControlled/> */}
       {/* <Controlled/> */}
-      <Registration/>
+      {/* <Registration/> */}
+      <RegistrationReact/>
     </div>
   )
 }

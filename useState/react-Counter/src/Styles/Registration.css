@@ -75,6 +75,9 @@ a:hover {
     font-size: 18px;
     border: none;
 }
-.summary p{
-    border: none;
+
+
+.summary span{
+    color: #007acc;
+    font-size: 14px;
 }
