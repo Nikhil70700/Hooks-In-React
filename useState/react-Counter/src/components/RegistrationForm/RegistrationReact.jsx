@@ -13,12 +13,15 @@ const RegistrationReact = () => {
     });
     const handleInputChange = (e) => {
         const { name, value } = e.target;
+
         setUser((prev) => ({ ...prev, [name]: value }));
+
     };
     const handleFormSubmit = (e) => {
         e.preventDefault();
         console.log(user);
-    };
+    }
+
     return (
         <>
         <section className='summary '
