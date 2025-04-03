@@ -6,7 +6,10 @@
 // import UnControlled from './components/unControlled';
 // import RegistrationReact from './components/RegistrationForm/RegistrationReact';
 
-import LoginForm from "./components/LoginForm/LoginForm"
+// import ContactForm from "./components/ContactForm/ContactForm"
+import ContactFormTwo from "./components/ContactForm/ContactFormTwo";
+// import LoginForm from "./components/LoginForm/LoginForm"
+// import LoginFormTwo from "./components/LoginForm/LoginFormTwo"
 
 
 
@@ -21,7 +24,10 @@ function App() {
       {/* <Controlled/> */}
       {/* <Registration/> */}
       {/* <RegistrationReact/> */}
-      <LoginForm/>
+      {/* <LoginForm/> */}
+      {/* <LoginFormTwo/> */}
+      {/* <ContactForm/> */}
+      <ContactFormTwo/>
     </div>
   )
 }
