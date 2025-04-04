@@ -1,0 +1,104 @@
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Container Styling */
+  .container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  /* Time Display */
+  .Timer {
+    font-size: 2rem;
+    color: #673ab7;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Headings */
+  h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraph Text */
+  p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  /* Count Highlight */
+  span {
+    font-weight: bold;
+    color: #2196f3;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Input Field */
+  input[type="text"] {
+    padding: 12px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: 0.2s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #2196f3;
+    outline: none;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .Timer {
+      font-size: 1.5rem;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
