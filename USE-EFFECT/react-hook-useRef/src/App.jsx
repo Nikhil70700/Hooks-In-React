@@ -1,11 +1,12 @@
 // import './App.css'
+import Cleanup from './components/hooks/useEffect/Cleanup'
 import UseEffectAgain from './components/hooks/useEffect/useEffectAgain'
 import UseEffectWatch from './components/hooks/useEffect/UseEffectWatch'
 // import { ReactUseEffect } from './components/hooks/useEffect'
 // import { CleanUp } from './components/hooks/useEffect/Cleanup'
 // import { ReactUseEffectTime } from './components/hooks/useEffect/time'
 
-import { Challenge } from './components/hooks/useEffect/UseEffectChallenge'
+// import { Challenge } from './components/hooks/useEffect/UseEffectChallenge'
 
 function App() {
   
@@ -14,10 +15,11 @@ function App() {
     <>
       {/* <ReactUseEffect/> */}
       {/* <ReactUseEffectTime/> */}
-      <Challenge/>
+      {/* <Challenge/> */}
       {/* <CleanUp/> */}
       {/* <UseEffectAgain/> */}
       {/* <UseEffectWatch/> */}
+      <Cleanup/>
     </>
   )
 }
