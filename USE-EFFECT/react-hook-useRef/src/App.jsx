@@ -1,4 +1,6 @@
 // import './App.css'
+import HowNotToFetchApi from './components/FetchApi/HowNotToFetchApi'
+import HowToFetch from './components/FetchApi/HowToFetch'
 import Cleanup from './components/hooks/useEffect/Cleanup'
 import UseEffectAgain from './components/hooks/useEffect/useEffectAgain'
 import UseEffectWatch from './components/hooks/useEffect/UseEffectWatch'
@@ -19,7 +21,9 @@ function App() {
       {/* <CleanUp/> */}
       {/* <UseEffectAgain/> */}
       {/* <UseEffectWatch/> */}
-      <Cleanup/>
+      {/* <Cleanup/> */}
+      {/* <HowNotToFetchApi/> */}
+      <HowToFetch/>
     </>
   )
 }
