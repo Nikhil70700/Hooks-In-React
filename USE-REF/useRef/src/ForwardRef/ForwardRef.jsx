@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import BeforeReact19Input from '../ForwardRef/BeforeReact19Input';
+import AfterReact19Input from './AfterReact19Input';
 
 
 const ForwardRef = () => {
@@ -12,9 +13,16 @@ const ForwardRef = () => {
   }
 
   return (
+    // <form onSubmit={handleFormSubmit}>
+    //   <BeforeReact19Input type="text" label="username"   ref={username} />
+    //   <BeforeReact19Input type="password" label="password" ref={password} />
+    //   <button>Submit</button>
+      
+
+    // </form>
     <form onSubmit={handleFormSubmit}>
-      <BeforeReact19Input type="text" label="username"   ref={username} />
-      <BeforeReact19Input type="password" label="password" ref={password} />
+      <AfterReact19Input type="text" label="username"   ref={username} />
+      <AfterReact19Input type="password" label="password" ref={password} />
       <button>Submit</button>
       
 
