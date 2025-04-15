@@ -14,3 +14,4 @@ export const BioProvider = ({children}) => {
         <BioContext.Provider value={{myFname,myMname,myLname,myAge}}>{children}</BioContext.Provider>
     )
 }
+
