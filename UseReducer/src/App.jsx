@@ -1,4 +1,4 @@
-import './App.css'
+// import './App.css'
 import { ReducerComp } from './Components/Counter'
 function App() {
   return (
