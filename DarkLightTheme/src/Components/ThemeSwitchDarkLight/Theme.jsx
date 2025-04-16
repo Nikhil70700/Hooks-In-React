@@ -22,7 +22,7 @@ export const DarkLight = () => {
     const { theme, handleToggleTheme } = use(ThemeContext)
     return (
         <div className={`min-h-screen flex flex-col items-center justify-center p-8 ${theme === 'dark' ? 'bg-black text-white' : 'bg-gray-50 text-gray-900'}`}>
-            <h1 className={`text-4xl font-bold mb-4 ${theme === 'dark' ? 'text-blue-300' : 'text-blue-600'}`}>
+            <h1 className={`text-4xl font-bold mb-4 ${theme === 'dark' ? 'text-white' : 'text-blue-600'}`}>
                 Dark Light Mode Website
             </h1>
             <p className="text-xl mb-8">Welcome to React</p>
