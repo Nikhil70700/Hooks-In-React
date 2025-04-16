@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+/* Base styles and CSS variables for theme control */
+:root {
+    /* Light theme variables */
+    --light-bg: #f8f9fa;
+    --light-text: #212529;
+    --light-heading: #0d6efd;
+    --light-button-bg: #6c757d;
+    --light-button-text: #ffffff;
+    --light-button-hover: #5a6268;
+    --light-shadow: rgba(0, 0, 0, 0.1);
+    
+    /* Dark theme variables */
+    --dark-bg: #212529;
+    --dark-text: #e9ecef;
+    --dark-heading: #74c0fc;
+    --dark-button-bg: #495057;
+    --dark-button-text: #ffffff;
+    --dark-button-hover: #6c757d;
+    --dark-shadow: rgba(255, 255, 255, 0.1);
+    
+    /* Default to light theme */
+    --bg-color: var(--light-bg);
+    --text-color: var(--light-text);
+    --heading-color: var(--light-heading);
+    --button-bg: var(--light-button-bg);
+    --button-text: var(--light-button-text);
+    --button-hover: var(--light-button-hover);
+    --shadow: var(--light-shadow);
+  }
+  
+  /* Theme-specific styling */
+  [data-theme="dark"] {
+    --bg-color: var(--dark-bg);
+    --text-color: var(--dark-text);
+    --heading-color: var(--dark-heading);
+    --button-bg: var(--dark-button-bg);
+    --button-text: var(--dark-button-text);
+    --button-hover: var(--dark-button-hover);
+    --shadow: var(--dark-shadow);
+  }
+  
+  /* Reset and base styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Component styling */
+  .main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .heading {
+    color: var(--heading-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .para {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+  
+  .btn-switch {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 8px var(--shadow);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-switch:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow);
+  }
+  
+  .btn-switch:active {
+    transform: translateY(0);
+  }
+  
+  /* Animation for theme transition */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .main-div {
+    animation: fadeIn 0.5s ease-in-out;
+  }
