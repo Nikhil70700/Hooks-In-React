@@ -6,8 +6,8 @@ import MemoParentComponent from './Components/UseMemo'
 function App() {
   return (
     <>
-      {/* <ReactMemo/> */}
-      <MemoParentComponent/>
+      <ReactMemo/>
+      {/* <MemoParentComponent/> */}
     </>
   )
 }
